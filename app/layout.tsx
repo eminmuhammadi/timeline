@@ -1,18 +1,22 @@
+// These styles apply to every route in the application
 import './globals.css'
 
-export default function RootLayout({
-  children,
-}: {
+import { Montserrat } from '@next/font/google'
+const textFont = Montserrat({ subsets: ['latin'] })
+
+interface IRootLayout {
   children: React.ReactNode
-}) {
+}
+
+const RootLayout = (layout: IRootLayout) => {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body>
+        <main className={textFont.className}>{layout.children}</main>
+      </body>
     </html>
   )
 }
+
+export default RootLayout
