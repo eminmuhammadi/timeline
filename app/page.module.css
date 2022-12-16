@@ -1,0 +1,31 @@
+.page {
+    @apply h-screen bg-black;
+}
+
+.bg {
+    @apply h-full pt-24 bg-no-repeat bg-center bg-origin-content;
+}
+
+.banner {
+    @apply absolute top-0 left-0 w-full h-full bg-black bg-opacity-40;
+}
+
+.banner_container {
+    @apply container pt-16 pl-12;
+}
+
+.title {
+    @apply text-8xl font-bold text-gray-200;
+}
+
+.slogan {
+    @apply text-4xl text-gray-400 leading-tight pt-3;
+}
+
+.footer {
+    @apply absolute bottom-0 left-0 w-full pb-4;
+}
+
+.footer_text {
+    @apply w-full text-xs text-gray-500 pl-12 select-none;
+}
