@@ -16,7 +16,8 @@ const nextConfig = {
   trailingSlash: true,
   distDir: 'build',
   experimental: {
-    appDir: true,
+    appDir: false,
+    runtime: 'experimental-edge',
   },
   assetPrefix: process.env.NODE_ENV === 'production' ? CDN_BASE_URL : undefined,
   devIndicators: {
