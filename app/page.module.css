@@ -3,7 +3,7 @@
 }
 
 .bg {
-    @apply h-full pt-24 bg-no-repeat bg-center bg-origin-content;
+    @apply h-full pt-24 bg-no-repeat bg-cover bg-[url(https://picsum.photos/720.webp?grayscale)] md:bg-[url(https://picsum.photos/1440.webp?grayscale)] lg:bg-[url(https://picsum.photos/1920/1080.webp?grayscale)];
 }
 
 .banner {
@@ -12,20 +12,15 @@
 
 .banner_container {
     @apply container pt-16 pl-12;
+    background: radial-gradient(ellipse at left top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 30%);
 }
 
 .title {
     @apply text-8xl font-bold text-gray-200;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .slogan {
-    @apply text-4xl text-gray-400 leading-tight pt-3;
-}
-
-.footer {
-    @apply absolute bottom-0 left-0 w-full pb-4;
-}
-
-.footer_text {
-    @apply w-full text-xs text-gray-500 pl-12 select-none;
+    @apply text-4xl text-gray-300 leading-tight pt-3;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }

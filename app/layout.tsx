@@ -1,4 +1,3 @@
-// These styles apply to every route in the application
 import './globals.css'
 
 import { Montserrat } from '@next/font/google'

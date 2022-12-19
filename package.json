@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "sh -c \"export NEXT_TELEMETRY_DISABLED=1 && export NEXT_TELEMETRY_DEBUG=1\" && sh -c \"./node_modules/.bin/concurrently \"next dev --turbo\" \"tailwindcss --input input.css --output output.css --watch\"\"",
+    "dev": "sh -c \"export NEXT_TELEMETRY_DISABLED=1 && export NEXT_TELEMETRY_DEBUG=1\" && sh -c \"./node_modules/.bin/concurrently \"next dev --turbo\" \"tailwindcss --input input.css --output ./build/output.css --watch\"\"",
     "build": "sh -c \"export NEXT_TELEMETRY_DISABLED=1 && export NEXT_TELEMETRY_DEBUG=1\" && next build",
     "start": "sh -c \"export NEXT_TELEMETRY_DISABLED=1 && export NEXT_TELEMETRY_DEBUG=1\" && next start",
     "lint": "sh -c \"export NEXT_TELEMETRY_DISABLED=1 && export NEXT_TELEMETRY_DEBUG=1\" && next lint",
